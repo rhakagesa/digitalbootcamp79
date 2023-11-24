@@ -11,7 +11,7 @@ public class pigDiceGame {
         do{ 
             System.out.println("Computer has " + compScore + " points.");
             for (int i = 3; i > 0; i--) {
-                randomValue = rand.nextInt(1,7);
+                randomValue = rand.nextInt(0,7);
                 if(randomValue != 1){                
                     System.out.println("   Computer rolled a " + randomValue);
                     compScore += randomValue;
@@ -28,7 +28,7 @@ public class pigDiceGame {
             System.out.println("You have " + playerScore + " points.");
                
                 while(rollOrHold.equalsIgnoreCase("roll")){            
-                randomValue = rand.nextInt(1,7);
+                randomValue = rand.nextInt(0,7);
 
                 if(randomValue != 1){                
                     System.out.println("   You rolled a " + randomValue);
