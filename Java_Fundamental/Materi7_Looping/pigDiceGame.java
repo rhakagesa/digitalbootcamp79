@@ -55,6 +55,7 @@ public class pigDiceGame {
                                                         break;
                                                     }
                                         }   else {
+                                                tempScore = 0;
                                                 System.out.println("   You rolled a " + randomValue);
                                                 System.out.println("   That ends it turn.");
                                                 rollOrHold = "hold";
@@ -63,6 +64,7 @@ public class pigDiceGame {
                                     }
                                 
                                 if(rollOrHold.equalsIgnoreCase("hold")){
+                                    playerScore += tempScore;
                                     System.out.println("  You ends the round with " + playerScore + " points.");
                                     rollOrHold = "roll";
                                 }
