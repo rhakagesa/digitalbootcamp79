@@ -34,13 +34,13 @@ public class Person {
     }
 
     //Method without return
-    public void sayHello(){
+    void sayHello(){
         System.out.println("Hello my name " + name + ", my age is " + age + " nice to meet you.");
         System.out.println("My home address is at " + address + ", " + country + " city.");
     }
 
     //Method with return
-    public String sayGoodbye(String paramName){
+    String sayGoodbye(String paramName){
         return "Byeee... " + paramName +" see you again.";
     }
 }

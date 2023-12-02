@@ -7,12 +7,13 @@ public class Doctor extends Person {
     }
 
     //Method overriding
+    @Override
     public void sayHello(){
         super.sayHello();
         System.out.println("My occupation is a " + specialist + " doctor.");
     }
     
-    public void surgery(){
+    void surgery(){
         System.out.println("I can surgery operation Patients.");
     }
 }

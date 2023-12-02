@@ -7,11 +7,12 @@ public class Teacher extends Person{
         this.lesson = lesson;
     }
 
-    public void teaching(){
+    void teaching(){
         System.out.println("I can teach " + subject +", and i will teach you " + lesson + ".");
     }
 
     //Method overriding
+    @Override
     public void sayHello(){
         super.sayHello();
         System.out.println("My job is a " + subject +" teacher, and i will teach you " + lesson + " first.");

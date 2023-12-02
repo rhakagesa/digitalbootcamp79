@@ -7,16 +7,17 @@ public class Programmer extends Person{
     }
 
     //Method overriding
+    @Override
     public void sayHello(){
         super.sayHello();
         System.out.println("My job is programmer, the tech what i use is " + tech + ".");
     }
 
-    public void hacking(){
+    void hacking(){
         System.out.println("I can hack a websites.");
     }
 
-    public void coding(){
+    void coding(){
         System.out.println("I can create application using technology : " + tech + ".");
     }
 }
