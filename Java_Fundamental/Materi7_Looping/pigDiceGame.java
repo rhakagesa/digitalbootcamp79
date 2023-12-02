@@ -63,6 +63,7 @@ public class pigDiceGame {
                                     }
                                 
                                 if(rollOrHold.equalsIgnoreCase("hold")){
+                                    playerScore += tempScore;
                                     System.out.println("  You ends the round with " + playerScore + " points.");
                                     rollOrHold = "roll";
                                 }
